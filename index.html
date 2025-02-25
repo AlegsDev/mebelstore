@@ -10,18 +10,18 @@
 <body>
 
 <header>
-  <img src="logo.png" alt="Логотип">
-  <div class="phone">+7 (123) 456-78-90</div>
+  <img src="IMG/logow.png" alt="Логотип">
+  <div class="phone">+<b>7</b> (123) 456-78-90</div>
   <svg class="whatsapp"></svg>
 </header>
 
 <div class="container-main">
   <div class="text-section">
-    <h1>Мебель для дома и офиса</h1>
+    <h1>Мебель из ротанга</h1>
     <p>Стильные столы и стулья для любого интерьера.</p>
     <div class="buttons">
       <button>Заказать сейчас</button>
-      <button>Каталог</button>
+      <button><a href="#tables">Галерея</a></button>
     </div>
   </div>
   <div class="image-section">
@@ -30,7 +30,9 @@
     <img src="IMG/mebel3.png" alt="Фото 3" style="display: none;">
   </div>
 </div>
-<div class="container">
+<div class="container" >
+  <h1 class="assort">Наш ассортимент</h1>
+  <div class="carousel-text-wrapper">
     <div class="carousel">
       <input type="radio" id="carousel-1-1" name="carousel-1[]" checked>
       <input type="radio" id="carousel-1-2" name="carousel-1[]">
@@ -38,11 +40,11 @@
       <input type="radio" id="carousel-1-4" name="carousel-1[]">
       <input type="radio" id="carousel-1-5" name="carousel-1[]">
       <ul class="carousel__items">
-        <li class="carousel__item"><img src="IMG/mebel2.png" alt=""></li>
-        <li class="carousel__item"><img src="IMG/mebel1.png" alt=""></li>
-        <li class="carousel__item"><img src="IMG/mebel3.png" alt=""></li>
-        <li class="carousel__item"><img src="IMG/mebel2.png" alt=""></li>
-        <li class="carousel__item"><img src="IMG/mebel1.png" alt=""></li>
+        <li class="carousel__item"><img src="img/mebel2.png" alt=""></li>
+        <li class="carousel__item"><img src="img/mebel1.png" alt=""></li>
+        <li class="carousel__item"><img src="img/mebel3.png" alt=""></li>
+        <li class="carousel__item"><img src="img/mebel2.png" alt=""></li>
+        <li class="carousel__item"><img src="img/mebel1.png" alt=""></li>
       </ul>
       <div class="carousel__prev">
         <label for="carousel-1-1"></label>
@@ -66,9 +68,19 @@
         <label for="carousel-1-5"></label>
       </div>
     </div>
+    <div class="text-block">
+      <h3>Столы</h3>
+      <p>Обеденные столы, письменные столы, журнальные столы, барные стойки и многое другое.</p>
+    </div>
   </div>
-  
-  <div class="container">
+</div>
+
+<div class="container">
+  <div class="carousel-text-wrapper">
+    <div class="text-block">
+      <h3>Стулья</h3>
+      <p>Классические, современные, барные стулья, кресла для отдыха и многое другое.</p>
+    </div>
     <div class="carousel">
       <input type="radio" id="carousel-2-1" name="carousel-2[]" checked>
       <input type="radio" id="carousel-2-2" name="carousel-2[]">
@@ -76,11 +88,11 @@
       <input type="radio" id="carousel-2-4" name="carousel-2[]">
       <input type="radio" id="carousel-2-5" name="carousel-2[]">
       <ul class="carousel__items">
-        <li class="carousel__item"><img src="IMG/mebel3.png" alt=""></li>
-        <li class="carousel__item"><img src="IMG/mebel2.png" alt=""></li>
-        <li class="carousel__item"><img src="IMG/mebel1.png" alt=""></li>
-        <li class="carousel__item"><img src="IMG/mebel3.png" alt=""></li>
-        <li class="carousel__item"><img src="IMG/mebel2.png" alt=""></li>
+        <li class="carousel__item"><img src="img/mebel3.png" alt=""></li>
+        <li class="carousel__item"><img src="img/mebel2.png" alt=""></li>
+        <li class="carousel__item"><img src="img/mebel1.png" alt=""></li>
+        <li class="carousel__item"><img src="img/mebel3.png" alt=""></li>
+        <li class="carousel__item"><img src="img/mebel2.png" alt=""></li>
       </ul>
       <div class="carousel__prev">
         <label for="carousel-2-1"></label>
@@ -105,18 +117,160 @@
       </div>
     </div>
   </div>
-  
-  <div class="text-container">
-    <div class="text-block">
-      <h3>Столы</h3>
-      <p>Обеденные столы, письменные столы, журнальные столы, барные стойки и многое другое.</p>
+</div>
+
+<section id="about-us">
+  <h2 class="about-heading" id="about-us-title">Почему выбирают нас</h2>
+  <img src="IMG/atWork.png" alt="Фон" class="background-image-f">
+  <div class="info-boxes">
+      <div class="info-box">
+          <h3>Качество</h3>
+          <p>Мы предлагаем мебель из высококачественных материалов, устойчивую к износу.</p>
+      </div>
+      <div class="info-box">
+          <h3>Выбор</h3>
+          <p>У нас вы найдете большой выбор столов и стульев в различных стилях и цветах.</p>
+      </div>
+      <div class="info-box">
+          <h3>Доступность</h3>
+          <p>Мы предлагаем доступные цены на всю нашу продукцию.</p>
+      </div>
+      <div class="info-box">
+          <h3>Обслуживание</h3>
+          <p>Мы предоставляем дружелюбное и профессиональное обслуживание.</p>
+      </div>
+  </div>
+</section>
+
+  <section id="delivery">
+    <h2 class="delivery" id="delivery-title">Услуги доставки и сборки</h2>
+    <img src="IMG/car.png" alt="Фон" class="background-image-f">
+    <div class="delivery-info">
+      <div class="delivery-item">
+        <div class="delivery-icon"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" xmlns:xlink="http://www.w3.org/1999/xlink" enable-background="new 0 0 512 512"><g><polygon points="352,208 352,256 352,272 448,272 448,256 416.721,208 " fill="#000000" style="fill: rgb(148, 148, 148);"></polygon><path d="m510.078,231.766l-47.82-80c-2.891-4.82-7.922-7.766-13.539-7.766h-128.719v-64c0-8.836-6.445-16-15.281-16h-288c-8.836,0-16.719,7.164-16.719,16v304c0,8.836 7.883,16 16.719,16h66.272c7.156,27.523 31.995,48 61.728,48 29.732,0 54.571-20.477 61.728-48h98.273 34.272c7.156,27.523 31.995,48 61.728,48 29.732,0 54.571-20.477 61.727-48h34.273c8.836,0 15.281-7.164 15.281-16v-144c-0.001-2.898-0.431-5.742-1.923-8.234zm-478.078-135.766h256v64 208h-81.554c-7.156-27.523-31.995-48-61.728-48-29.732,0-54.571,20.477-61.728,48h-50.99v-272zm112.719,320c-17.648,0-32-14.352-32-32s14.351-32 32-32c17.648,0 32,14.352 32,32s-14.352,32-32,32zm256,0c-17.648,0-32-14.352-32-32s14.352-32 32-32c17.648,0 32,14.352 32,32s-14.352,32-32,32zm79.281-48h-17.554c-7.156-27.523-31.995-48-61.727-48-29.733,0-54.571,20.477-61.728,48h-18.991v-192h119.656l40.344,68.43v123.57z" fill="#000000" style="fill: rgb(148, 148, 148);"></path></g></svg></div>
+        <h3 class="delivery-title">Доставка</h3>
+        <p class="delivery-text">Мы предлагаем удобные варианты доставки.</p>
+      </div>
+      <div class="delivery-item">
+        <div class="delivery-icon"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" xmlns:xlink="http://www.w3.org/1999/xlink" enable-background="new 0 0 512 512"><g><circle cx="96" cy="415.998" r="16" fill="#000000" style="fill: rgb(92, 92, 92);"></circle><path d="m388.688,228.686l-16,16c-6.25,6.25-6.25,16.375 0,22.625 3.125,3.125 7.219,4.688 11.313,4.688 4.094,0 8.188-1.563 11.313-4.688l16-16c6.25-6.25 6.25-16.375 0-22.625s-16.376-6.25-22.626-2.84217e-14z" fill="#000000" style="fill: rgb(92, 92, 92);"></path><path d="m324.688,228.686l-16,16c-6.25,6.25-6.25,16.375 0,22.625 3.125,3.125 7.219,4.688 11.313,4.688 4.094,0 8.188-1.563 11.313-4.688l16-16c6.25-6.25 6.25-16.375 0-22.625s-16.376-6.25-22.626-2.84217e-14z" fill="#000000" style="fill: rgb(92, 92, 92);"></path><path d="m260.688,228.686l-16,16c-6.25,6.25-6.25,16.375 0,22.625 3.125,3.125 7.219,4.688 11.313,4.688 4.094,0 8.188-1.563 11.313-4.688l16-16c6.25-6.25 6.25-16.375 0-22.625s-16.376-6.25-22.626-2.84217e-14z" fill="#000000" style="fill: rgb(92, 92, 92);"></path><path d="M406.406,1.334c-4.938-2.148-10.648-1.68-15.164,1.273C386.727,5.561,384,10.6,384,15.998v128 C384,161.646,369.648,176,352,176h-64V15.998c0-5.399-2.727-10.438-7.242-13.391c-4.508-2.945-10.227-3.43-15.164-1.266 c-72.859,31.852-114.602,105.617-103.875,183.539c1.852,13.5,5.383,26.844,10.484,39.656c4.953,12.438,2.328,26.297-6.68,35.313 L4.688,420.686c-6.25,6.25-6.25,16.375,0,22.625l64,64c3.125,3.125,7.219,4.688,11.313,4.688c4.094,0,8.188-1.563,11.313-4.688 l168.883-168.883c8.109-8.109,19.414-11.414,29.477-8.617c8.648,2.391,17.5,4.102,26.32,5.078 c50.016,5.477,100.141-10.406,137.375-43.734C490.625,257.787,512,209.982,512,159.998C512,90.607,471.539,29.811,406.406,1.334z M193.112,176c-1.171-11-1.147-22,0.018-32H256v32H193.112z M256,42.701V112h-55.293C210.898,84,229.726,59.764,256,42.701z M432.016,267.318c-30.898,27.672-70.836,40.422-112.508,35.758c-7.125-0.781-14.297-2.172-21.305-4.109 c-21.164-5.844-44.391,0.602-60.633,16.836L80,473.373l-41.375-41.375l149.523-149.523c18.063-18.063,23.469-45.444,13.781-69.78 c-0.613-1.539-0.994-2.694-1.551-4.694H272h80c35.289,0,64-28.713,64-64.002V42.74c40.008,26.125,64,69.188,64,117.258 C480,200.896,462.508,240.014,432.016,267.318z" fill="#000000" style="fill: rgb(92, 92, 92);"></path></g></svg></div>
+        <h3 class="delivery-title">Сборка</h3>
+        <p class="delivery-text">Мы предоставляем услуги профессиональной сборки мебели.</p>
+      </div>
     </div>
-    <div class="text-block">
-      <h3>Стулья</h3>
-      <p>Классические, современные, барные стулья, кресла для отдыха и многое другое.</p>
+  </section>
+  
+  <div class="grid-wrapper">
+    <div>
+      <img id="tables" src="https://avatars.mds.yandex.net/i?id=6367546553e84aadfc2591e222040063b28ef156-10131513-images-thumbs&n=13" alt="" />
+    </div>
+    <div>
+      <img src="https://avatars.mds.yandex.net/i?id=02c6cb3c289ec4fcc8ea00584c4f7b10793b3ace-4219415-images-thumbs&n=13" alt="" />
+    </div>
+    <div class="tall">
+      <img src="https://avatars.mds.yandex.net/i?id=84c6b1d650dc7484ac90829e658f1b34cb20a577-4275079-images-thumbs&n=13" alt="">
+    </div>
+    <div class="wide">
+      <img src="https://avatars.mds.yandex.net/i?id=f6f8c779472d338d195adfa9b9fd7568f371e031-4843938-images-thumbs&n=13" alt="" />
+    </div>
+    <div>
+      <img src="https://avatars.mds.yandex.net/i?id=c2752de0c1a26d6cc937911f80c039179c774a28-5427094-images-thumbs&n=13" alt="" />
+    </div>
+    <div class="tall">
+      <img src="https://avatars.mds.yandex.net/i?id=97558c868e9b7befdbf085bfaf9a3e494a3a6b72-10749046-images-thumbs&n=13" alt="" />
+    </div>
+    <div class="big">
+      <img src="https://avatars.mds.yandex.net/i?id=2c8ab7adc5949c71cdb5aa9c4c3785b99d323d1a-8289735-images-thumbs&n=13" alt="" />
+    </div>
+    <div>
+      <img src="https://avatars.mds.yandex.net/i?id=421fb1131537878a2c10af5cc28d6deed5d4b81a-5491132-images-thumbs&n=13" alt="" />
+    </div>
+    <div class="wide">
+      <img src="https://avatars.mds.yandex.net/i?id=421fb1131537878a2c10af5cc28d6deed5d4b81a-5491132-images-thumbs&n=13" alt="" />
+    </div>
+    <div class="big">
+      <img src="https://avatars.mds.yandex.net/i?id=f477f429fc37a13a5d551abe5f2e159307011d51-5877394-images-thumbs&n=13" alt="" />
+    </div>
+    <div class="tall">
+      <img src="https://avatars.mds.yandex.net/i?id=d712450e5a8350836d472a1292217e3f3478656c-12720126-images-thumbs&n=13" alt="" />
+    </div>
+    <div>
+      <img src="https://avatars.mds.yandex.net/i?id=d5f47297414cc3b6711f507e56445c73036bfea3-5383096-images-thumbs&n=13" alt="" />
+    </div>
+    <div>
+      <img src="https://avatars.mds.yandex.net/i?id=cec685fb668cba1afbe8cbeb98a4fbaf511d77cd-8185493-images-thumbs&n=13" alt="" />
+    </div>
+    <div>
+      <img src="https://avatars.mds.yandex.net/i?id=4b4787b79978c88180d5e846edf31ed14a24488f-5568379-images-thumbs&n=13" alt="" />
+    </div>
+    <div>
+      <img src="https://avatars.mds.yandex.net/i?id=08151abc66783027ad3a56aafdd4dc483b4cf7b4-9053009-images-thumbs&n=13" alt="" />
+    </div>
+    <div class="wide">
+      <img src="https://avatars.mds.yandex.net/i?id=52965055c53fefbc421ca6b6b5d05c0ff2b22c9b-7553437-images-thumbs&n=13" alt="" />
+    </div>
+    <div>
+      <img src="https://avatars.mds.yandex.net/i?id=1d57b62dbfea4d166c728fd768e85e1af825a5b5-3849670-images-thumbs&n=13" alt="" />
+    </div>
+    <div>
+      <img src="https://avatars.mds.yandex.net/i?id=3c5bf71590ff257cf88a3f92637adb57119116f4-12544737-images-thumbs&n=13" alt="" />
+    </div>
+    <div class="wide">
+      <img src="https://avatars.mds.yandex.net/i?id=17781045d7bd6ef045091c7c19c1f1cfb97d33b8-8231149-images-thumbs&n=13" alt="" />
+    </div>
+    <div class="big">
+      <img src="https://avatars.mds.yandex.net/i?id=741e3f9f7448541b252b7a584a5c561b4572c7ef-4935529-images-thumbs&n=13" alt="" />
+    </div>
+    <div>
+      <img src="https://avatars.mds.yandex.net/i?id=1dfa23f1f8bdf36bb4231e1be6d04a8be49107fa-9233044-images-thumbs&n=13" alt="" />
+    </div>
+    <div>
+      <img src="https://avatars.mds.yandex.net/i?id=f4f7e59ff04246f8cf8c021d1677591802265f15-12548095-images-thumbs&n=13" alt="" />
+    </div>
+    <div class="big">
+      <img src="https://avatars.mds.yandex.net/i?id=dcc55925b3013431afdbb3de81dfd6fff385208c-12438661-images-thumbs&n=13" alt="" />
+    </div>
+    <div class="tall">
+      <img src="https://avatars.mds.yandex.net/i?id=c6394fd3ea752c4f0f26bd1ca893d212987cf72d0968c21a-12497179-images-thumbs&n=13" alt="" />
+    </div>
+    <div>
+      <img src="https://avatars.mds.yandex.net/i?id=46c0b41e4d4c1436140ccfd28b4ae3a48e80c5e1-5232373-images-thumbs&n=13" alt="" />
+    </div>
+    <div>
+      <img src="https://avatars.mds.yandex.net/i?id=49618195fdd1a09a66df8a52a71ca55cf40846e6-9148266-images-thumbs&n=13" alt="" />
+    </div>
+    <div>
+      <img src="https://avatars.mds.yandex.net/i?id=1baaea7c4648e71bfbfcb14a80d9533d238e9731-5869563-images-thumbs&n=13" alt="" />
+    </div>
+    <div class="wide">
+      <img src="https://avatars.mds.yandex.net/i?id=fb54ae67f0f85f81f7cb747c2c517bc02b370b91-5236263-images-thumbs&n=13" alt="" />
     </div>
   </div>
-  
-<div style="margin-bottom: 1000px;"></div>
+  <footer class="footer">
+    <div class="footer-left">
+      <img src="IMG/logob.png" alt="">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    </div>
+    <div class="footer-divider"></div>
+    <div class="footer-section">
+      <svg fill="#6495ED" width="40" height="40" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 496 496" style="enable-background:new 0 0 496 496;" xml:space="preserve"><g><g><g><path d="M456,141.44V104h-64V76.44L307.072,0H40v141.44l-40,56V496h496V197.44L456,141.44z M456,168.96l20.544,28.76L456,210.56 V168.96z M440,120v100.568l-143.136,89.456C282.288,300.936,265.408,296,248,296c-17.408,0-34.288,4.936-48.864,14.024 L176,295.568V120H440z M312,25.96L363.152,72H312V25.96z M56,16h240v72h80v16H160v181.568l-104-65V16z M40,168.96v41.6 l-20.544-12.84L40,168.96z M16,214.44l169.456,105.904L16,470.248V214.44z M29.112,480l168.216-148.808 C211.32,318.824,229.32,312,248,312s36.68,6.824,50.672,19.192L466.888,480H29.112z M480,470.248L310.544,320.344L480,214.44 V470.248z"/><rect x="72" y="64" width="176" height="16"/><rect x="72" y="96" width="72" height="16"/><rect x="72" y="128" width="72" height="16"/><rect x="72" y="160" width="72" height="16"/><rect x="72" y="192" width="72" height="16"/><path d="M424,136h-80v80h80V136z M408,200h-48v-48h48V200z"/><rect x="192" y="160" width="136" height="16"/><rect x="192" y="192" width="136" height="16"/><rect x="312" y="224" width="16" height="16"/><rect x="192" y="224" width="104" height="16"/></g></g></g></svg>
+      <h3>MAIL</h3>
+      <p>info@yourmail.com</p>
+    </div>
+    <div class="footer-divider"></div>
+    <div class="footer-section">
+      <svg width="50" height="50" fill="#6495ED" id="Layer_1" enable-background="new 0 0 512 512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="m396.125 314.212-83.735-40.733c-4.6-2.237-10.115-1.313-13.734 2.306l-18.743 18.744c-25.637-17.422-47.435-40.12-63.746-66.383l17.426-17.425c3.618-3.618 4.544-9.133 2.306-13.734l-40.733-83.734c-1.697-3.49-4.978-5.943-8.805-6.585-3.825-.642-7.729.605-10.472 3.349l-63.25 63.249c-2.422 2.422-3.693 5.764-3.494 9.184 3.211 55.118 26.628 108.214 65.938 149.504 39.231 41.209 91.066 67.302 145.956 73.473.448.051.896.075 1.342.075 3.164 0 6.222-1.252 8.484-3.515l68.498-68.497c2.744-2.744 3.991-6.646 3.349-10.472-.643-3.829-3.096-7.109-6.587-8.806zm-78.077 66.647c-98.251-13.775-176.279-95.968-184.567-194.496l47.469-47.468 29.626 60.9-17.967 17.966c-3.812 3.812-4.614 9.696-1.962 14.389 20.239 35.821 49.484 66.228 84.571 87.934 4.733 2.931 10.861 2.218 14.799-1.72l19.563-19.563 60.901 29.626zm-62.048-380.859c-141.16 0-256 114.841-256 256s114.84 256 256 256 256-114.841 256-256-114.841-256-256-256zm0 488c-127.925 0-232-104.075-232-232s104.075-232 232-232 232 104.075 232 232-104.075 232-232 232z"/></svg>
+      <h3>CALL</h3>
+      <p>+123 456 7890</p>
+    </div>
+    <div class="footer-divider"></div>
+    <div class="footer-section">
+      <a href="https://web.telegram.org/" target="_blank">
+        <svg width="60" height="60" style="margin-right:50px; border-radius:9px;" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 455.731 455.731" style="enable-background:new 0 0 455.731 455.731;" xml:space="preserve"><g><rect x="0" y="0" style="fill:#61A8DE;" width="455.731" height="455.731"/><path style="fill:#FFFFFF;" d="M358.844,100.6L54.091,219.359c-9.871,3.847-9.273,18.012,0.888,21.012l77.441,22.868l28.901,91.706 c3.019,9.579,15.158,12.483,22.185,5.308l40.039-40.882l78.56,57.665c9.614,7.057,23.306,1.814,25.747-9.859l52.031-248.76 C382.431,106.232,370.443,96.08,358.844,100.6z M320.636,155.806L179.08,280.984c-1.411,1.248-2.309,2.975-2.519,4.847 l-5.45,48.448c-0.178,1.58-2.389,1.789-2.861,0.271l-22.423-72.253c-1.027-3.308,0.312-6.892,3.255-8.717l167.163-103.676 C320.089,147.518,324.025,152.81,320.636,155.806z"/></g></svg>
+      </a>
+      <a href="https://web.whatsapp.com/" target="_blank">
+        <svg width="60" height="60" fill="green" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 308 308" style="enable-background:new 0 0 308 308;" xml:space="preserve"><g id="XMLID_468_"><path id="XMLID_469_" d="M227.904,176.981c-0.6-0.288-23.054-11.345-27.044-12.781c-1.629-0.585-3.374-1.156-5.23-1.156 c-3.032,0-5.579,1.511-7.563,4.479c-2.243,3.334-9.033,11.271-11.131,13.642c-0.274,0.313-0.648,0.687-0.872,0.687 c-0.201,0-3.676-1.431-4.728-1.888c-24.087-10.463-42.37-35.624-44.877-39.867c-0.358-0.61-0.373-0.887-0.376-0.887 c0.088-0.323,0.898-1.135,1.316-1.554c1.223-1.21,2.548-2.805,3.83-4.348c0.607-0.731,1.215-1.463,1.812-2.153 c1.86-2.164,2.688-3.844,3.648-5.79l0.503-1.011c2.344-4.657,0.342-8.587-0.305-9.856c-0.531-1.062-10.012-23.944-11.02-26.348 c-2.424-5.801-5.627-8.502-10.078-8.502c-0.413,0,0,0-1.732,0.073c-2.109,0.089-13.594,1.601-18.672,4.802 c-5.385,3.395-14.495,14.217-14.495,33.249c0,17.129,10.87,33.302,15.537,39.453c0.116,0.155,0.329,0.47,0.638,0.922 c17.873,26.102,40.154,45.446,62.741,54.469c21.745,8.686,32.042,9.69,37.896,9.69c0.001,0,0.001,0,0.001,0 c2.46,0,4.429-0.193,6.166-0.364l1.102-0.105c7.512-0.666,24.02-9.22,27.775-19.655c2.958-8.219,3.738-17.199,1.77-20.458 C233.168,179.508,230.845,178.393,227.904,176.981z"/><path id="XMLID_470_" d="M156.734,0C73.318,0,5.454,67.354,5.454,150.143c0,26.777,7.166,52.988,20.741,75.928L0.212,302.716 c-0.484,1.429-0.124,3.009,0.933,4.085C1.908,307.58,2.943,308,4,308c0.405,0,0.813-0.061,1.211-0.188l79.92-25.396 c21.87,11.685,46.588,17.853,71.604,17.853C240.143,300.27,308,232.923,308,150.143C308,67.354,240.143,0,156.734,0z M156.734,268.994c-23.539,0-46.338-6.797-65.936-19.657c-0.659-0.433-1.424-0.655-2.194-0.655c-0.407,0-0.815,0.062-1.212,0.188 l-40.035,12.726l12.924-38.129c0.418-1.234,0.209-2.595-0.561-3.647c-14.924-20.392-22.813-44.485-22.813-69.677 c0-65.543,53.754-118.867,119.826-118.867c66.064,0,119.812,53.324,119.812,118.867 C276.546,215.678,222.799,268.994,156.734,268.994z"/></g></svg>
+      </a>
+    </div>
+  </footer>
 </body>
 </html>
